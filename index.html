@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Valorant</title>
+</head>
+<body>
+
+ 
+  
+  <section><!--Inicio do container-->
+
+    <div class="circle"></div> <!--Circulo que troca de cor al clicar no personagem-->
+
+  <header> <!--Inicio da barra de navegaçao-->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="./img/Logo valorant.svg" alt="Logo"></a>
+        <p>Valorant</p>
+      </div>
+
+      <div class="logo2">
+       <img width="100px" src="./img/riot-games-logo.png" alt="">
+      </div>
+
+      <div class="logo-compartilhar">
+        <img width="25px" src="./img/share-2.png" alt="">
+       </div>
+    </nav>
+  </header>  <!--Fim da barra de navegaçao-->
+
+  <div class="content"> <!--Inicio conteudo principal do site-->
+    <div class="textBox">
+      <h2 class="h2">It's not just Game <br>It's <span>Valorant</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sunt impedit cum cumque harum, magnam placeat ducimus, excepturi repellendus corporis velit ipsa? Facere, nulla nam.</p>
+     <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Saiba Mais
+     </a>
+
+    </div>
+
+    <div class="img-box" >
+      <img src="./img/omen.png" class="start" alt="">
+    </div>
+
+  </div> <!--Fim conteudo principal do site-->
+
+  <ul class="thumb"> <!--Inicio dos icones dos personagens do site-->
+    <li>
+      <img style="background-color: #81698d;" src="./img/omen.svg" onclick="imgSlider('./img/omen.png'); changeCircleColor('#81698d')">
+      <h4>Omen</h4>
+    </li>
+    <li>
+      <img style="background-color: #40c4b7;" src="./img/sage.svg" onclick="imgSlider('./img/sage.png'); changeCircleColor('#40c4b7') " >
+      <h4>Sage</h4>
+    </li>
+    <li>
+      <img style="background-color: #5374a9;" src="./img/sova.svg" onclick="imgSlider('./img/sova.png'); changeCircleColor('#5374a9')">
+      <h4>Sova</h4>
+    </li>
+  </ul><!--Inicio dos icones dos personagens do site-->
+
+  <ul class="sci"> <!--Inicio dos icones de vida dos personagens-->
+    <li><a href="#"><i class="fa-solid fa-crosshairs"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-shield-halved"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-heart-pulse"></i></a></li>
+  </ul> <!--Fim dos icones de vida dos personagens-->
+
+</section> <!--Fim do container-->
+
+
+<script src="app.js">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Reset Principal*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+
+
+}
+
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)),url('./img/EZNUB4pWsAAdepG.jfif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100%;
+}
+
+section{
+position: relative;
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 100px;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Nav-Bar*/
+header .navbar{
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 100px;
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo{
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo p{
+  font-size: 1.5rem;
+  color: #ff4656;
+  cursor: pointer;
+  font-family: 'Bungee Inline',sans-serif;
+}
+
+/*Conteudo Principal*/
+.content{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox{
+  position: relative;
+  max-width: 600px;
+}
+
+.content .textBox h2{
+  color: #fff;
+  font-size: 3.2em;
+  line-height: 1.4em;
+  font-weight: 500;
+  font-family: 'Bungee Inline',sans-serif;
+  padding-bottom: 0.5rem;
+}
+
+.content .textBox h2 span{
+  color: #ff4656;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: 'Bungee Inline', curs
+}
+
+.content .textBox p{
+  color: rgb(156, 156, 156);
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.8px;
+}
+
+/* Inicio Estilização do Botao*/
+.content .textBox a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #ff4656;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  margin-top: 30px;
+}
+
+.content .textBox a:hover{
+  color: #910417;
+  background-color: #ff4656;
+  box-shadow: 0 0 10px #ff4656, 0 0 40px #ff4656, 0 0 80px #ff4656;
+  transition-delay: 1s; 
+}
+
+.content .textBox a span{
+  position: absolute;
+  display: block;
+}
+
+.content .textBox a span:nth-child(1){
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background:linear-gradient(90deg, transparent, #ff4656);
+}
+
+.content .textBox a:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+
+.content .textBox a span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background:linear-gradient(270deg, transparent, #ff4656);
+ }
+
+ .content .textBox a:hover span:nth-child(3){
+   right: 100%;
+   transition: 1s;
+   transition-delay: 0.5s;
+}
+
+.content .textBox a span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background:linear-gradient(180deg, transparent, #ff4656);
+ }
+ 
+ .content .textBox a:hover span:nth-child(2){
+   top: 100%;
+   transition: 1s;
+   transition-delay: 0.25s;
+}
+
+.content .textBox a span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background:linear-gradient(360deg, transparent, #ff4656);
+ }
+ 
+ .content .textBox a:hover span:nth-child(4){
+   bottom: 100%;
+   transition: 1s;
+   transition-delay: 0.75s;
+} 
+/* Fim Estilização do Botao*/
+
+
+/* Inicio Conteudo Imagem Principal*/
+.content .img-box{
+  width: 400px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content .img-box img{
+  width: 500px;
+}
+
+
+/* Inicio Conteudo Imagem Icone do site*/
+.thumb{
+  position: absolute;
+  left: 40%;
+  display: flex;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.thumb li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.thumb li h4{
+  color: #fff;
+  text-align: center;
+}
+
+.thumb li:hover{
+  transform: translateY(-15px);
+}
+
+.thumb img{
+  max-width: 110px;
+  border: 6px solid #fff; 
+  border-radius: 50%;
+}
+
+.thumb img:hover{
+  box-shadow: 0 0 10px #ff4656, 0 0 40px #ff4656, 0 0 80px #ff4656;
+}
+
+/*Inicio dos icones de vida dos personagens*/
+.sci{
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sci li{
+  list-style: none;
+ 
+}
+
+.sci i{
+  font-size: 1rem;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.sci li a{
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.sci li i:hover{
+  transform: translateY(-2px);
+  color:#060816;
+ font-size: 1.4rem;
+}
+
+/*Circulo que troca de cor al clicar no personagem*/
+.circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #81698d;
+  clip-path:circle(600px at right 900px);
+}
+
+/*Responsivo*/
+@media(max-width:991px){
+ 
+  .logo2{
+    display: none;
+  }
+
+  .toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url('./img/menu.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+   }
+
+  .menu{
+    display: none;
+  }
+
+  section{
+    padding:2rem;
+  }
+
+  header .navbar{
+    padding: 20px 20px 120px;
+  }
+
+  .content{
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .content .textBox .h2{
+    font-size: 2.5em;
+  }
+
+  .content .textBox h2 span{
+    font-size: 1em;
+  }
+
+  .content .textBox{
+    max-width: 100%;
+  }
+
+  .content .img-box{
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .content .img-box img{
+    max-width: 300px;
+  }
+
+  .thumb li img{
+    max-width: 60px;
+  }
+
+  .thumb{
+    justify-content: center;
+    left: 50%;
+  }
+
+  .circle{
+    clip-path: circle(400px at center bottom);
+  }
+
+  .sci{
+    background: #ff4656;
+    right: 0;
+    width: 50px;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius: 5px;
+  }
+
+  .toggle.active{
+    background: url('./img/close.png');
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  .content .textBox a{
+    font-size: 1rem;
+  }
+
+  .menu .navigation.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ff4656;
+    z-index: 10;
+  }
+
+}
+
+@media(max-width:450px){
+  .content .textBox .h2{
+    font-size: 1.7em;
+    padding-bottom: 2rem;
+  }
+}
